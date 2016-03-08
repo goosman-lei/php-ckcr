@@ -1,0 +1,9 @@
+{
+    "name": "goosman/php-ckcr-demo",
+    "description": "demo for check and correct data",
+    "version": "0.0.1-dev",
+    "type": "project",
+    "require": {
+        "goosman/php-ckcr": "*"
+    }
+}
