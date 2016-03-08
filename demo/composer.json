@@ -4,6 +4,15 @@
     "version": "0.0.1-dev",
     "type": "project",
     "require": {
-        "goosman/php-ckcr": "*"
-    }
+        "goosman/php-ckcr": "*" 
+    },  
+    "repositories": [
+        {   
+            "packagist": false
+        },  
+        {   
+            "type": "vcs",
+            "url": "git@github.com:goosman-lei/php-ckcr.git"
+        }   
+    ]  
 }
