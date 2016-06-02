@@ -50,9 +50,10 @@ $ckcr = 'aarr{
         }
     }
 }';
+$data_1    = $data; // 方式两个demo互相影响
 $ckcrProxy = $ckcrHandler->getProxy($ckcr);
-$ckcrProxy->ckcr($data);
-echo json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . chr(10);
+$ckcrProxy->ckcr($data_1);
+echo json_encode($data_1, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . chr(10);
 
 
 echo '==================带预处理的例子' . chr(10);
@@ -62,6 +63,7 @@ $ckcr = 'aarr{
         *: {@show@},
     }
 }';
+$data_2    = $data; // 方式两个demo互相影响
 $ckcrProxy = $ckcrHandler->getProxy($ckcr);
-$ckcrProxy->ckcr($data);
-echo json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . chr(10);
+$ckcrProxy->ckcr($data_2);
+echo json_encode($data_2, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . chr(10);

@@ -134,7 +134,7 @@ ${OBJECT_CODE_FRAME}
             }
             $prefix = self::popPrefix();
             $objectCode .= "${prefix}}\n";
-            $nextToken = self::readToken($srcCode, $position);
+            $token = self::readToken($srcCode, $position);
         }
 
         // 所有非字段分隔符(逗号)都还原, 这样就把块中的最后一个逗号可有可无的问题解决了
